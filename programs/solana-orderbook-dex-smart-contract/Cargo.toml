@@ -1,0 +1,22 @@
+[package]
+name = "solana-orderbook-dex-smart-contract"
+version = "0.1.0"
+description = "Phoenix-inspired orderbook DEX on Solana"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_orderbook_dex"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"
+bytemuck = { version = "1.14", features = ["derive"] }
+solana-program = "~1.18"

@@ -1,0 +1,37 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Anchor
+.anchor/
+.DS_Store
+test-ledger/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDL
+target/idl/
+target/types/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
